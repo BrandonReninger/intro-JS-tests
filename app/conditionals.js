@@ -50,7 +50,9 @@ function timeOfDayGreeting(hour) {
         return "Good Afternoon";
     } else if (hour >= 17 && hour < 21) {
         return "Good Evening";
-    } else if (hour >= 21 && hour < 4) {
+    } else if (hour >= 21 && hour < 24) {
+        return "Good Night";
+    } else if (hour < 5 && hour < 12) {
         return "Good Night";
     }
 }
